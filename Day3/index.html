@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment on Post</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="ig-post">
+        <div class="card user-card">
+          <!-- div class="card card-1" -->
+          <div class="main-user-container">
+    
+            <!-- div class="card-main-user-container" -->
+            <div class="user-data">
+              <!-- div class="user-inform" -->
+    
+              <!-- <img class="user-img" src="https://xsgames.co/randomusers/assets/avatars/male/70.jpg">
+            <span class="user-name">Korey_Dengel90</span>
+            <p>California, USA</p>  -->
+    
+            </div>
+            <button><i class="fa-solid fa-ellipsis"></i></button>
+          </div>
+    
+          <!-- </div> -->
+          <div class="main-img">
+    
+            <!--               <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/man-conquered-a-high-mountain-motivation-free-image.jpeg?w=1500&quality=50"> -->
+          </div>
+    
+          <div class="social-icon-container">
+            <!-- div class="below" -->
+            <div class="buttons">
+              <!-- div class="buttons" -->
+              <div class="social-icon-btns">
+                <!-- div class="like-comment-send" -->
+                <button><i class="fa-regular fa-heart"></i></button>
+                <button><i class="fa-regular fa-comment"></i></button>
+                <button><i class="fa-regular fa-paper-plane"></i></button>
+              </div>
+    
+              <button id="bookmark-btn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+            <p class="likes">Liked by <span class="first-like"></span> and <button class="show-likes">others</button></p>
+    
+            <div class="caption">
+              <p class="username-caption"></p> <!-- caption-username -->
+              <p class="text-caption"></p><!-- caption-text -->
+            </div>
+    
+            <button class="comments toggle-btn-comments show-comments grey">View all <span class="comments-count grey"></span> comments</button>
+            <!-- number-of-comments -->
+    
+            <p class="date-posted"></p>
+          </div>
+        </div>
+    
+        <!-- Comments Card "3", "Card 2"-->
+        <div class="comments-card card hidden">
+    
+          <div class="like-comment-cards-top">
+            <!-- Card-2-3-above"-->
+            <button class="toggle-btn-comments hide-comments"><i class="fa-solid fa-angle-left"></i></button>
+            <p class="comments-head">
+              <!-- comments-heading-->Comments
+            </p>
+            <button><i class="fa-regular fa-paper-plane"></i></button>
+          </div><!-- </div> like-comment-card-top -->
+    
+          <div class="comments-container"></div>
+    
+          <div class="comments-bottom">
+            <!-- card-2-below -->
+            <div class="comments-emojis">
+              <!-- comment-emojies -->
+              <button class="emoji">❤️</button>
+              <button class="emoji">🙌</button>
+              <button class="emoji">🔥</button>
+              <button class="emoji">👏</button>
+              <button class="emoji">🥲</button>
+              <button class="emoji">😍</button>
+              <button class="emoji">😮</button>
+              <button class="emoji">😂</button>
+            </div>
+    
+            <div class="add-comment-cont">
+              <div class="user-img" id="comment-user-img"></div>
+              <form id="comment-form">
+                <input type="text" id="add-comment" name="comment" placeholder="Add a comment...">
+                <button type="submit" id="post-comment-btn">Post</button>
+              </form>
+            </div><!-- add-comment-cont </div>-->
+    
+          </div> <!-- comments-bottom </div>-->
+    
+        </div><!-- comments-card card hidden </div> comment-card ends here-->
+    
+        <!-- LIKES CARD "2", "Card 3"-->
+        <div class="likes-card card hidden">
+    
+          <div class="like-comment-cards-top">
+            <!-- card-2-3-above -->
+            <button class="hide-likes"><i class="fa-solid fa-angle-left"></i></button>
+            <p class="likes-head">
+              <!-- likes-heading-->Likes
+            </p>
+            <button><i class="fa-regular fa-paper-plane" id="dm-likes"></i></button>
+          </div>
+    
+          <form action="" class="likes-search">
+            <input type="text" placeholder="Search" name="search">
+          </form>
+    
+        </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+/* *{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+
+
+
+#card{
+    width: 300px;
+    height: 400px;
+    background:whitesmoke;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+#card img{
+    height: 55%;
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+
+#card h1{
+    font-size: 30px;
+
+}
+
+#card h5{
+    font-size: 15px;
+    margin: 10px 0 ;
+    color: black;
+} */
+
+* {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: inherit;
+    color: white;
+    justify-content: center;
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    text-decoration: underline;
+  }
+  
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  i {
+    font-size: 25px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 237, 230);
+    gap: 10px;
+  }
+  
+  .card {
+    height: 650px;
+    min-width: 400px;
+    max-width: 400px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  /*User Card*/
+  .hidden {
+    display: none;
+  }
+  
+  .main-user-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .user-data {
+    display: flex;
+  }
+  
+  .username {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+  
+  .usernameUN {
+    margin-bottom: 5px;
+  }
+  
+  .location,
+  .username-name {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .user-img {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .user-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .main-img {
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  
+  .main-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 12px;
+  }
+  .social-icon-container /*.below*/ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 155px;
+    padding: 0 1rem;
+  }
+  
+  .social-icon-btns /*.like-comment-send*/ {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .likes {
+    font-weight: 300;
+  }
+  .likes span {
+    font-weight: 700;
+  }
+  
+  .likes a:hover {
+    text-decoration: underline;
+  }
+  
+  .caption {
+    display: flex;
+  }
+  .username-caption /* caption-username*/ {
+    font-weight: 700;
+  }
+  .text-caption /* caption-text*/ {
+    padding-left: 8px;
+  }
+  
+  .grey {
+    font-weight: 300;
+    color: rgb(113, 113, 113);
+  }
+  
+  .grey:hover {
+    text-decoration: underline;
+  }
+  .date-posted {
+    font-size: 14px;
+    font-weight: 300px;
+    color: rgb(113, 113, 113);
+  }
+  
+  /* Likes card, card-3*/
+  .likes-search {
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  .likes-search input {
+    width: 91%;
+    margin: 0px 1rem 20px 1rem;
+    border-radius: 5px;
+    border: none;
+    height: 28px;
+    background-color: rgb(69, 69, 69);
+  }
+  
+  .likes-card input::placeholder {
+    color: rgb(198, 198, 198);
+  }
+  
+  .follow-btn {
+    padding: 7px 30px;
+    background-color: #23aeff;
+    border-radius: 10px;
+  }
+  
+  .follow-btn:hover {
+    text-decoration: none;
+  }
+  
+  .following-btn {
+    background-color: rgb(69, 69, 69);
+  }
+  
+  #dm-likes {
+    display: none;
+  }
+  
+  /*Comments card, Card-2*/
+  
+  .likes-card,
+  .comments-card {
+    background-color: black;
+    color: white;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .likes-card::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .likes-card i /*card-3*/,
+  .comments-card i /*card-2*/ {
+    color: white;
+  }
+  
+  .like-comment-cards-top /*card-2-3-above*/ {
+    position: sticky;
+    background-color: black;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 1rem;
+    border-bottom: 1px solid rgb(66, 66, 66);
+  }
+  
+  .comments-container {
+    height: 68%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .comments-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .comments-bottom /*card-2-below*/ {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    height: 110px;
+    width: 91.5%;
+    background-color: black;
+    padding: 0 1rem;
+    border: 1px solid rgb(66, 66, 66);
+    gap: 8px;
+  }
+  
+  .comments-emojis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+  }
+  
+  .emoji {
+    font-size: 22px;
+  }
+  
+  .emoji:hover {
+    text-decoration: none;
+  }
+  
+  .add-comment-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 1rem 0 1rem;
+    width: 100%;
+  }
+  
+  #add-comment {
+    border-radius: 20px;
+    border: none;
+    width: 245px;
+    height: 30px;
+    border: 1px solid rgb(66, 66, 66);
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+  
+  #add-comment:focus + #post-comment-btn {
+    color: rgb(86, 143, 255);
+  }
+  
+  #post-comment-btn {
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 13px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    color: transparent;
+  }
+  
+  .card-secondary-user-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 1rem 13px 1rem;
+  }
+  
+  .comment-text {
+    width: 100%;
+    max-width: 250px;
+    font-weight: 300;
+  }
