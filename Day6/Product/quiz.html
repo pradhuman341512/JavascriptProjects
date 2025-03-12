@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=text-gray-800 p-2 mt-2 mb-2 ml-0  mr-0 hover:bg-blue-600 hover:text-white curser-pointer   w-full rounded-xl text-left border border-gray-800 p-2 mt-2 mb-2 ml-0  mr-0 hover:bg-blue-600 hover:text-white curser-pointer  .0">
+    <title>Quiz Question </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800 m-0 p-0 ">
+    <div class=" flex justify-center items-center h-screen ">
+        <div class="bg-white p-6 rounded-lg w-98 h-[420px]">
+        <h1 class=" text-start text-2xl font-bold text-blue-900 border-b border-black pb-6 ">Simple Quiz</h1>
+
+        <div class="text-start mt-3 ">
+            <h2 id="question" class="text-lg font-semibold text-blue-900">Question goes here</h2>
+            <div id="answer-buttons">
+                <button class="bg-white font-medium text-gray-800 p-2 mt-2 mb-2 ml-0  mr-0 hover:bg-gray-700 hover:text-white    w-full rounded-xl text-left border border-gray-800   hover:bg-blue-600 hover:text-white curser-pointer  transition duration-150 ease-out md:ease-out" id="answer-1">Answer 1</button>
+                <button class="bg-white font-medium text-gray-800 p-2 mt-2 mb-2 ml-0  mr-0 hover:bg-gray-700 hover:text-white    w-full rounded-xl text-left border border-gray-800  hover:bg-blue-600 hover:text-white curser-pointer transition duration-150 ease-out md:ease-out " id="answer-2">Answer 2 </button>
+                <button class="bg-white font-medium text-gray-800 p-2 mt-2 mb-2 ml-0  mr-0 hover:bg-gray-700 hover:text-white    w-full rounded-xl text-left border border-gray-800  hover:bg-blue-600 hover:text-white curser-pointer transition duration-150 ease-out md:ease-out " id="answer-3">Answer 3</button> 
+                <button class="bg-white font-medium text-gray-800 p-2 mt-2 mb-2 ml-0  mr-0 hover:bg-gray-700 hover:text-white    w-full rounded-xl text-left border border-gray-800  hover:bg-blue-600 hover:text-white curser-pointer transition duration-150 ease-out md:ease-out " id="answer-4">Answer 4</button>
+            </div>
+            <div class="text-center">
+                <button id="next-btn" class="bg-blue-700 text-white p-[10px] rounded-xl w-[150px] mt-2 text-center font-bold cursor-pointer hidden" >Next</button>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
